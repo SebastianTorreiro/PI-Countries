@@ -1,0 +1,87 @@
+.container-form{
+    height: 770px;
+    border-radius: 50%;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(14, 20, 44, 0.791);
+    margin-top: 0%;
+}
+
+.container-form div {
+    margin: 40px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+h2{
+    color: white;
+}
+label{
+    color: white;
+}
+.button-delete:hover{
+color: red;
+}
+.countriesSelected{
+    display: flex;
+    flex-direction: row;
+}
+
+.countriesSelected div{
+    margin: 4px;
+}
+label{
+    margin-right: 12px;
+    font-weight: bold;
+}
+.activity{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+.activity .danger{
+border: solid 1px red;
+}
+
+#error-activity{
+    color: red;
+}
+
+.input-activity{
+    margin-right: 4px;
+}
+
+.button-add-activitie{
+    width: 100px;
+    height: 50px;
+    border-radius: 10%;
+    color:black ;
+    cursor: pointer;
+    font-weight: bold;
+}
+.button-add-activitie:hover{
+    background-color: rgb(66, 203, 66);
+
+}
+
+.button-cancel-activitie button{
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    border-radius: 10%;
+    color:black ;
+    font-weight: bold;
+}
+.button-cancel-activitie button:hover{
+    background-color: rgb(186, 46, 46);
+}
+.text-delete{
+    color: white;
+}
+
+

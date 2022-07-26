@@ -1,0 +1,7 @@
+.cards-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 40px ;
+    place-content: center;
+}
+

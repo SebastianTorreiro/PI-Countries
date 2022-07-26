@@ -1,0 +1,19 @@
+.container{display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.start-button{
+    text-decoration: none;
+    box-shadow: none;
+    display: flex;
+    align-content: center;
+    width: 100px;
+    height: 50px;
+    border-radius: 10%;
+    background-color:rgba(14, 20, 44, 0.791);
+    color:rgb(185, 239, 246);;
+    cursor: pointer;
+    font-weight: bold;
+}
