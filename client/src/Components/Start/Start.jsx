@@ -9,14 +9,11 @@ function Start({getAllCountries}) {
 
 
   
-  useEffect(() =>{
-    getAllCountries();
-    console.log('renderize')
-  },[])
+
 
   
   return (
-    <div className='container'>
+    <div className='container-start'>
         <Link to="/countries">
           <button className='start-button'> Go Countries! </button>
         </Link>

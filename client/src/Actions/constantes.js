@@ -11,3 +11,4 @@ export const SET_LOADING_FALSE = "SET_LOADING_FALSE";
 export const SET_ERROR_FALSE = "SET_ERROR_FALSE";
 export const SET_ERROR_TRUE = "SET_ERROR_TRUE";
 export const SET_FUNCTION = "SET_FUNCTION";
+export const CLEAR_DETAIL = "CLEAR_DETAIL";

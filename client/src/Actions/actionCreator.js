@@ -11,6 +11,7 @@ import {
     SET_LOADING_FALSE,
     SET_ERROR_TRUE,
     SET_FUNCTION,
+    CLEAR_DETAIL,
   } from  "./constantes.js";
 
   const API = process.env.REACT_APP_API
@@ -39,6 +40,11 @@ export  function getCountryDetail(id){
                     return dispatch({type: SET_ERROR_TRUE})
                 })
     }
+}
+
+export function clearDetail(){
+    console.log('alo')
+    return ({type: CLEAR_DETAIL })
 }
 
 

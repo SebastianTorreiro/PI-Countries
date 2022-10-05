@@ -1,11 +1,12 @@
-.container{display: flex;
+.container-start{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 200px;
 }
 
 .start-button{
-    text-decoration: none;
     box-shadow: none;
     display: flex;
     align-content: center;
@@ -16,4 +17,20 @@
     color:rgb(185, 239, 246);;
     cursor: pointer;
     font-weight: bold;
+}
+
+.title-start{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    display: flex;
+    align-content: center;
+    text-decoration: none;
+
+}
+
+.logo{
+/* width: 2000px; */
+background-color: rgba(255, 255, 255, 0);
 }

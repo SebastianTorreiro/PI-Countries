@@ -13,12 +13,15 @@ function Countries({allCountries, getAllCountries, error, loading, errorForzado,
 // console.log('renderize')
 
 const [currentPage, setCurrentPage] = useState(1);
-const [cardPerPage, setCardPerPage] = useState(9)
+const [cardPerPage, setCardPerPage] = useState(8)
 
 useEffect(()=>{
   setPageInState(setCurrentPage, currentPage)
-  console.log('adasdass')
 },[currentPage])
+
+useEffect(() =>{
+  getAllCountries();
+},[])
 // let ayuda = 1
 // if(allCountries.length !== referenceCountries.length && currentPage !== 1 && ayuda === 1){
 //   setCurrentPage(1)

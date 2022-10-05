@@ -1,16 +1,17 @@
 import React,{useEffect} from 'react'
 import {connect} from 'react-redux'
 import {useParams, Link, useNavigate} from 'react-router-dom'
-import {getCountryDetail } from '../../Actions/actionCreator.js'
+import {getCountryDetail, clearDetail } from '../../Actions/actionCreator.js'
 import './countryDetail.css'
 
-function CountryDetail({getCountryDetail, p, page, setPage}) {
+function CountryDetail({getCountryDetail,clearDetail, p, page, setPage}) {
 
 
   const {id} = useParams()
+
   useEffect(()=>{
    getCountryDetail(id)
-    return setPage(page)
+    // return (clearDetail())
   },[id])
 
   let history = useNavigate()
@@ -95,7 +96,10 @@ const returnHome = () =>{
         </div>
 
         <div className='button-back'>
-            <button onClick={returnHome}>
+            <button onClick={() => {
+                returnHome()
+                clearDetail()
+                }}>
                     Volver
             </button>
         </div>
@@ -113,4 +117,4 @@ const mapStateToProps = (state) =>{
 
 }
 
-export default connect(mapStateToProps,{getCountryDetail})(CountryDetail);
+export default connect(mapStateToProps,{getCountryDetail, clearDetail})(CountryDetail);

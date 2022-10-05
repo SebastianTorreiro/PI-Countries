@@ -10,7 +10,8 @@ import { GET_ALL_COUNTRIES,
     SET_ERROR_FALSE,
     SET_ERROR_TRUE,
     SET_FUNCTION,
-     }  from '../Actions/constantes.js'
+    CLEAR_DETAIL,
+    }  from '../Actions/constantes.js'
 
 
 const initialState = {
@@ -125,6 +126,12 @@ export default function rootReducer(state = initialState, action) {
             return{
                 ...state,
                 errors: true
+            }
+        case CLEAR_DETAIL:
+            console.log('estoy aca perras')
+            return {
+                ...state,
+                countryDetail: {}
             }
         case SET_FUNCTION:
             return{
